@@ -1,0 +1,36 @@
+
+mongodb:
+  host: s201
+  port: 27017
+  user:
+  passwd:
+  database: sns
+
+redis:
+  host: localhost
+  port:
+  user:
+  passwd:
+
+postgresql:
+  dbname: game
+  host: localhost
+  port: 5432
+  user: postgres
+  passwd: 111111
+
+
+auth_server:
+  http:
+    host:
+    port: 8088
+    ssl: false
+    keyfile: /home/ssl/server.key
+    certfile: /home/ssl/server.crt
+  mongodb:  mongodb
+  postgresql: postgresql
+  redis: redis
+  log:
+    stdout: true
+    file: api_server.log
+    dgram: localhost:9901
